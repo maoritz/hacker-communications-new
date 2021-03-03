@@ -1,0 +1,216 @@
+/* 
+#F9FAFF boxes-background 
+#ffffff background color
+#222222 text
+#0C66C2 buttons and arrows
+*/
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Signika", sans-serif;
+  color: #222222;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.site {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 4rem 2rem;
+  /* box-shadow: 0 0 8px 2px #888; */
+}
+/* ----------------------------------------------- */
+/* REUSEABLE */
+/* ----------------------------------------------- */
+.logo-image {
+  max-width: 130px;
+  display: inline-block;
+}
+
+/* ----- HEADINGS ----- */
+h1 {
+  font-size: 8rem;
+}
+h2 {
+  font-size: 32px;
+  margin-bottom: 5rem;
+}
+h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 4rem;
+  color: #9ea3af;
+}
+
+/* ----- PARAGRAPHS AND SECTIONS ----- */
+section {
+  margin-bottom: 20rem;
+  text-align: center;
+}
+p {
+  font-size: 22px;
+  max-width: 50ch;
+  margin: 3.5rem 0 5rem 0;
+}
+.center-paragraphs {
+  display: flex;
+  justify-content: center;
+}
+
+/* ----- IMAGES ----- */
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* ----- LINKS AND BUTTONS ----- */
+a:link,
+a:visited {
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.site .btn {
+  padding: 1em 2em 1em;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn-full {
+  color: #fff;
+  background-color: #0c66c2;
+  border: 1px solid #0c66c2;
+}
+
+.btn-ghost {
+  color: #478081;
+  border-bottom: 1px solid #5da4a6;
+  margin-left: 15px;
+  font-size: 17px;
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+header {
+  margin-bottom: 20rem;
+}
+
+/* ----- NAVBAR ----- */
+nav {
+  display: flex;
+  vertical-align: middle;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+}
+
+.main-nav li {
+  margin-right: 4em;
+  margin-top: 1em;
+}
+
+.main-nav li a {
+  color: inherit;
+}
+
+.logo-border {
+  margin-top: 1rem;
+}
+
+.logo-border::after {
+  content: "";
+  margin: 3em;
+  border: solid #d9d9d9;
+  border-width: 2em 1px;
+}
+
+/* ----- HERO TEXT BOX ----- */
+.hero {
+  display: flex;
+}
+.hero-text-box {
+  margin-top: 25rem;
+  display: inline-block;
+}
+
+header .hero-image {
+  margin-top: 10rem;
+  max-height: 60rem;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* ----------------------------------------------- */
+/* SECTIONS */
+/* ----------------------------------------------- */
+.logos {
+  display: flex;
+  justify-content: center;
+}
+
+.logos img {
+  height: 30px;
+  width: 140;
+  margin-right: 6rem;
+}
+.logos img:last-of-type {
+  margin-right: 0;
+}
+
+.benefits {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.benefits li img {
+  margin-bottom: -5px;
+  margin-right: 5px;
+}
+
+.benefits li {
+  margin-right: 7rem;
+}
+
+.benefits li:last-of-type {
+  margin-right: 0;
+}
+
+.benefits li .point-arrow {
+  color: #0068cf;
+  font-size: 2em;
+  vertical-align: text-bottom;
+  margin-right: 0.5em;
+}
+
+.benefits li span {
+  vertical-align: super;
+}
